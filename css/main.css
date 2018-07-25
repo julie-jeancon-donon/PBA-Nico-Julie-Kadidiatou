@@ -102,7 +102,7 @@ textarea {
     color:white !important;
 }
 
-.hover-header:hover {
+.hover-header:hover, .search:hover {
     transition: color 0.5s !important;
     color:red !important;
     border-color:red !important;
@@ -126,6 +126,24 @@ textarea {
     background:inherit;
     color:white;
     border:none;
+}
+
+.search {
+    color:white;
+}
+
+.navbar-toggler {
+    color:white;
+}
+
+
+
+@media all and (min-width:1200px) {
+    .search {
+        position:absolute;
+        left:80%;
+        top:35%;
+    }
 }
 
 

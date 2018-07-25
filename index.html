@@ -26,15 +26,7 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
 
-  <!-- Bootstrap 4.0 Js script -->
-  <script src="js/bootstrap.bundle.js"></script>
-  <script src="js/bootstrap.bundle.js.map"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js.map"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.js.map"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootstrap.min.js.map"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
   <!-- Personnal stylesheet -->
@@ -48,49 +40,69 @@
   <![endif]-->
 
 <header>
-  <nav class="bgnoir navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand col-xl-3 hover-header" href="#">PALAIS BEAUX-ARTS LILLE</a>
+  <nav class="bgnoir navbar navbar-expand-xl navbar-dark">
+    <a href="" class="navbar-brand col-1 d-xl-none">
+      <img src="img/logo-lille.svg" alt="logo Lille" style="min-width: 40px; max-width:50px">
+    </a>
+    <a class="navbar-brand col-xl-3 hover-header d-none d-xl-block" href="#">PALAIS BEAUX-ARTS LILLE</a>
 
-    <div class="collapse navbar-collapse col-xl-3" id="navbarSupportedContent">
+    <div class="header-icons offset-6 col-2 col-md-2 offset-md-7 d-xl-none">
+      <span class=" col-4 fas fa-search search"></span>
+      <span class="col-4  fas fa-info-circle search"></span>
+    </div>
+
+    <button class="navbar-toggler col-md-1 col-2" type="button" data-toggle="collapse" data-target="#NavbarSupportedContent" aria-controls="navbarSupportedContent" aria-expande="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse col-xl-3" id="NavbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link color-white hover-header" href="#">COLLECTIONS<span class="sr-only">(current)</span></a>
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">COLLECTIONS<span class="sr-only">(current)</span></a>
+          <a class="nav-link color-white hover-header d-block d-xl-none" href="">Collections<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link color-white hover-header" href="#">VISITER</a>
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">VISITER</a>
+          <a class="nav-link color-white hover-header d-block d-xl-none" href="">Visiter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link color-white hover-header" href="#">AGENDA</a>
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">AGENDA</a>
+          <a class="nav-link color-white hover-header d-block d-xl-none" href="">Agenda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link color-white hover-header" href="#">INFO</a>
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">INFO</a>
+          <a class="nav-link color-white hover-header d-block d-xl-none">Info</a>
         </li>              
       </ul>
     </div>
 
-    <form class="d-none d-lg-block mx-auto form-inline col-lg-3 col-xl-2">
-      <input class="form-control col-lg-10 col-xl-12 pl-1 text-white hover-header" type="search" aria-label="Search"/>
-      <span class="searchfor fas fa-search tch"></span>
+    <form class="d-none d-xl-block mx-auto form-inline col-xl-2">
+      <input class="form-control col-xl-12 pl-1 text-white hover-header" type="search" aria-label="Search"/>
+      <span class="fas fa-search search"></span>
     </form>
-    <select class="d-none d-lg-block col-xl-2 pointer hover-header" id="exampleSelect1" style="max-width:160px">
+
+
+    <select class="pointer d-none d-xl-block col-xl-2 hover-header" id="exampleSelect1" style="max-width:160px">
         <option>Français</option>
         <option>English</option>
         <option>Dush</option>
     </select>
-    <img class="col-xl-1" src="img/logo-lille.svg" alt="logo Lille" style="width:50px">
+
+    <a href="" class="d-none d-xl-block col-xl-1">
+      <img src="img/logo-lille.svg" alt="logo Lille" style="max-width:50px">
+    </a>
 
   </nav>
 </header>
 
-
-
-
-
+                      <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
