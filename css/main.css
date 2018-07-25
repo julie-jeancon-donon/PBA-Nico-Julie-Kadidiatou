@@ -102,7 +102,7 @@ textarea {
     color:white !important;
 }
 
-.hover-header:hover, .search:hover {
+.hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
     transition: color 0.5s !important;
     color:red !important;
     border-color:red !important;
@@ -136,7 +136,14 @@ textarea {
     color:white;
 }
 
+.nav-borderb {
+    height:1px;
+    background-color:white;
+}
 
+.PBA-linkstyle:hover {
+    text-decoration:none;
+}
 
 @media all and (min-width:1200px) {
     .search {
@@ -145,6 +152,11 @@ textarea {
         top:35%;
     }
 }
+
+
+
+
+
 
 
 
