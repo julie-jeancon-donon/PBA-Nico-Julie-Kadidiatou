@@ -123,6 +123,63 @@ ul {
 }
 
 
+.color-white {
+    color:white !important;
+}
+
+.hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
+    transition: color 0.5s !important;
+    color:red !important;
+    border-color:red !important;
+}
+
+.bgnoir {
+    background-color:black;
+}
+
+.form-control {
+    border:4px solid white;
+    border-radius:0;
+    background-color:black;
+}
+
+.pointer {
+    min-height:25px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background:inherit;
+    color:white;
+    border:none;
+}
+
+.search {
+    color:white;
+}
+
+.navbar-toggler {
+    color:white;
+}
+
+.nav-borderb {
+    height:1px;
+    background-color:white;
+}
+
+.PBA-linkstyle:hover {
+    text-decoration:none;
+}
+
+@media all and (min-width:1200px) {
+    .search {
+        position:absolute;
+        left:80%;
+        top:35%;
+    }
+}
+
+
+
 
 
 
