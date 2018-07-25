@@ -93,13 +93,44 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+ /*  ========== CSS PAGE VISITER PBA ======== */
+
+ .grid-container div {
+     border:1px solid red;
+ }
 
 
+ .grid-container {
+   display: grid;
+   height: 75vh;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.75fr;
+   grid-template-areas: "individuel groupe famille etudiant enseignant";
+ }
 
+.individuel{
+  background-image: url(img/individuel.jpg);
+}
 
+.individuel {
+  grid-area: individuel;
+}
+
+.groupe {
+  grid-area: groupe;
+}
+
+.famille {
+  grid-area: famille;
+}
+
+.etudiant {
+  grid-area: etudiant;
+}
+
+.enseignant {
+  grid-area: enseignant;
+}
 
 
 
