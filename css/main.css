@@ -95,9 +95,9 @@ textarea {
 
  /*  ========== CSS PAGE VISITER PBA ======== */
 
- .grid-container div {
+ /* .grid-container div {
      border:1px solid red;
- }
+ } */
 
 .color-white {
     color:white !important;
@@ -156,38 +156,156 @@ textarea {
 
 
 
+.grid-container {
+  background-color: black;
+  display:block;
+}
 
+
+
+.encart{
+ background-color: rgba(255, 255, 255, 0.9);
+ display:flex;
+ flex-direction: row;
+ width: 90%;
+ height: 65px;
+
+}
+
+@font-face {
+ font-family: "lovelo";
+ src: url('lovelo.ttf');
+}
+
+@font-face {
+ font-family: "PBA";
+ src: url('pba.ttf');
+}
+
+
+.profil{
+ display: flex;
+ width:50%;
+ font-weight: 500;
+ font-size: 14px;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 3px;
+
+}
+
+.title{
+ display: flex;
+ width:50%;
+ font-family: "lovelo";
+ font-size: 21px;
+ padding-left: 5px;
+ justify-content: flex-start;
+ align-items: center;
+ }
+
+
+.individuel, .groupe, .famille, .etudiant, .enseignant {
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ grid-area: individuel;
+ height:85px;
+}
+
+ @media (min-width: 992px) {
 
  .grid-container {
    display: grid;
-   height: 75vh;
+   height: 100vh;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    grid-template-rows: 0.75fr;
    grid-template-areas: "individuel groupe famille etudiant enseignant";
  }
 
-.individuel{
-  background-image: url(img/individuel.jpg);
+
+
+
+.encart{
+
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 77%;
+  height: 9em;
+  margin:auto;
+  display: block;
+  padding-top: 35px;
+  padding-left: 25px;
 }
+
+@font-face {
+  font-family: "lovelo";
+  src: url('lovelo.ttf');
+}
+
+@font-face {
+  font-family: "PBA";
+  src: url('pba.ttf');
+}
+
+
+.profil{
+  font-size: 17px;
+  width: auto;
+  display: block;
+  position: relative;
+  top:10px;
+
+}
+
+.title{
+  font-family: "lovelo";
+  font-size: 27px;
+  width:auto;
+  display: block;
+  padding-left:0;
+  position: relative;
+  bottom:3px;
+
+  }
 
 .individuel {
   grid-area: individuel;
+  background-image: url(../img/Individuel.jpg);
+  background-size: cover;
+  height:100%;
 }
+
 
 .groupe {
   grid-area: groupe;
+  background-image: url(../img/Groupe.jpg);
+  background-size: cover;
+  height:100%;
 }
 
 .famille {
   grid-area: famille;
+  background-image: url(../img/Famille.jpg);
+  background-size: cover;
+  height:100%;
 }
 
 .etudiant {
   grid-area: etudiant;
+  background-image: url(../img/Etudiant.jpg);
+  background-size: cover;
+  height:100%;
 }
 
 .enseignant {
   grid-area: enseignant;
+  background-image: url(../img/Enseignant.jpg);
+  background-size: cover;
+  height:100%;
+}
+
+
+
 }
 
 
