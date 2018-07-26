@@ -194,7 +194,7 @@ ul {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt {
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe {
     color:#D8383F !important;
 }
 
@@ -244,15 +244,6 @@ footer a:hover {
 
 
 
-
-
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> 01f7e8babc7085413df1cf0b1cda94f1cc9dea4b
 /* ==========================================================================
    Helper classes
    ========================================================================== */
