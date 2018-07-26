@@ -97,6 +97,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.innercontent{
+
+}
+
+.collection-select {
+  background: white;
+  border: 5px solid black;
+  padding: 7px;
+  font-weight: bold;
+  font-family: bold;
+  display: block;
+}
+
+.collection-list {
+  z-index: 3;
+  text-align: left;
+  font-family: bold;
+  top: 30px;
+  border: 4px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
 
 @font-face {font-family:"PBA"; src:url("pba.ttf");}
 @font-face {font-family:"Lovelo"; src:url("lovelo.ttf");}
@@ -221,10 +246,13 @@ footer a:hover {
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 01f7e8babc7085413df1cf0b1cda94f1cc9dea4b
 /* ==========================================================================
    Helper classes
    ========================================================================== */
