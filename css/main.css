@@ -97,6 +97,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.innercontent{
+
+}
+
+.collection-select {
+  background: white;
+  border: 5px solid black;
+  padding: 7px;
+  font-weight: bold;
+  font-family: bold;
+  display: block;
+}
+
+.collection-list {
+  z-index: 3;
+  text-align: left;
+  font-family: bold;
+  top: 30px;
+  border: 4px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
 
 .color-white {
     color:white !important;
@@ -152,9 +177,6 @@ textarea {
         top:35%;
     }
 }
-
-
-
 
 
 
