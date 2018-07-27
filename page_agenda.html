@@ -50,24 +50,96 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="container">
+
+  <nav class="bgnoir navbar navbar-expand-xl navbar-dark col-12">
+    <a href="" class="navbar-brand col-1 d-xl-none">
+      <img src="img/logo-lille.svg" alt="logo Lille" style="min-width: 40px; max-width:50px">
+    </a>
+    <a class="navbar-brand col-xl-3 hover-header d-none d-xl-block" href="#">PALAIS BEAUX-ARTS LILLE</a>
+
+    <div class="header-icons offset-5 col-3 offset-sm-5 col-sm-3 col-md-2 offset-md-7 d-xl-none">
+      <span class=" col-1 mx-auto fas fa-search search"></span>
+      <span class="col-1 mx-auto fas fa-info-circle search"></span>
+    </div>
+
+    <button class="navbar-toggler col-md-1 col-2" type="button" data-toggle="collapse" data-target="#NavbarSupportedContent" aria-controls="navbarSupportedContent" aria-expande="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse col-xl-3" id="NavbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">COLLECTIONS<span class="sr-only">(current)</span></a>
+          <a class="nav-link color-white hover-header d-block d-xl-none" href=""><i class="fas fa-th offset-1"> Collections</i></a>
+          <div class="d-xl-none nav-borderb offset-1 col-6"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">VISITER</a>
+          <a class="nav-link color-white hover-header d-block d-xl-none" href=""><i class="fas fa-random offset-1"> Visiter</i></a>
+          <div class="d-xl-none nav-borderb offset-1 col-6"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">AGENDA</a>
+          <a class="nav-link color-white hover-header d-block d-xl-none" href=""><i class="fas fa-calendar-alt offset-1"> Agenda</i></a>
+          <div class="d-xl-none nav-borderb offset-1 col-6"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-white hover-header d-none d-xl-block" href="#">INFO</a>
+          <a class="nav-link color-white hover-header d-block d-xl-none"><i class="fas fa-info-circle offset-1"> Info</i></a>
+          <div class="d-xl-none nav-borderb offset-1 col-6"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-white hover-header d-block d-xl-none" href=""><i class="fas fa-envelope offset-1"> Contactez-nous</i></a>
+          <a class="hover-header PBA-linkstyle" href="">
+            <div class="MY-PBA color-white offset-1 col-4 col-sm-3 d-xl-none" style="border:5px solid white;">
+              <p class="text-center mt-2">Mon PBA</p>
+            </div>
+          </a>
+      </ul>
+    </div>
+
+    <form class="d-none d-xl-block mx-auto form-inline col-xl-2">
+      <input class="form-control col-xl-12 pl-1 text-white hover-header" type="search" aria-label="Search"/>
+      <span class="fas fa-search search"></span>
+    </form>
+
+
+    <select class="pointer d-none d-xl-block col-xl-2 hover-header" id="exampleSelect1" style="max-width:160px">
+        <option>Français</option>
+        <option>English</option>
+        <option>Dush</option>
+    </select>
+
+    <a href="" class="d-none d-xl-block col-xl-1">
+      <img src="img/logo-lille.svg" alt="logo Lille" style="max-width:50px">
+    </a>
+
+  </nav>
+</header>
+  <div class="container-fluid col-12 offset-xl-1 col-xl-10">
 
     <div class="row mt-5">
 
-      <div class="col offset-md-5">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
 
-            <img src="img/icone_Agenda.png" alt="agenda" style="width: 80px;">
 
-          <div class="innercontent" style="margin-right: 15px;">
+            <img class="rounded mx-auto d-block" src="img/icone_Agenda.png" alt="agenda" style="width: 80px;">
+
+          <div class="text-center">
 
             <h3>Agenda du musée</h3>
+
+          </div>
+
+          <p class="text-center">
+
             <i class="fas fa-caret-down"></i>
+
+          </p>
 
         </div>
 
-      </div>
-
-      <div class="sel-contain">
+      <!--<div class="sel-contain">
 
 
                   <button aria-label="Selection de la collection" class="collection-select">
@@ -75,7 +147,7 @@
                         <i class="fas fa-chevron-down"></i>
                       </div>
                   </button>
-                
+
                   <ul class="collection-list" style="display: block;">
                       <li><a href="/Agenda/(categorie)/actu-expositions">Exposition</a></li>
                       <li><a href="/Agenda/(categorie)/actu-visite">Visite</a></li>
@@ -88,8 +160,8 @@
                       <li><a href="/Agenda/(categorie)/actu-atelier">Atelier</a></li>
                   </ul>
 
-              </div>
-      <!-- <div class="col align-self-end">
+              </div>-->
+      <!--<div class="col align-self-end">
 
        <div class="select-contain">
 
@@ -100,7 +172,8 @@
        <select name="news" class="news">
 
            <option value="actualités"><button aria-label="Selection de la collection" class="collection-select">
-               <div class="collection active"><span> Toutes les actualités </span> <div class="icon-chevron-down icon"></div></div>
+               <div class="collection active"><span> Toutes les actualités </span>
+              <div class="icon-chevron-down icon"><i class="fas fa-chevron-down"></i></div></div>
            </button></option>
 
            <option value="exposition"><a href="/Agenda/(categorie)/actu-expositions">Exposition</a></option>
@@ -125,34 +198,53 @@
 
 </form>
 
-</div> -->
+</div>
+
+</div>-->
+
+
+<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Toutes les actualités
+</button>
+<div class="dropdown dropdown-menu" id="dropdownMenuButton">
+ <a class="dropdown-item" href="#">Exposition</a>
+ <a class="dropdown-item" href="#">Invité</a>
+ <a class="dropdown-item" href="#">Évènement</a>
+ <a class="dropdown-item" href="#">Actualités</a>
+ <a class="dropdown-item" href="#">Conférence</a>
+ <a class="dropdown-item" href="#">Jeune public</a>
+ <a class="dropdown-item" href="#">Nocturne</a>
+ <a class="dropdown-item" href="#">Atelier</a>
+</div>
+</div>
 
 </div>
 
 
+
      <div class="row">
 
-       <div class="col-3 mt-4">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4  mt-4">
 
-         <img src="img/img1.png" alt="">
+         <img src="img/img1.jpg" class="img-fluid img" alt="Responsive image">
 
        </div>
 
-      <div class="col"><hr>
+      <div class="col mt-4">
 
-         <h3><stroke><p class="font-weight-bold"> Jusqu'au 16 juillet 2018 - </p><p class="text-danger"> Évènement</p></stroke>OPEN MUSEUM SÉRIES TV</h3>
+        <div class="right"></div>
 
-         <p>
+         <h3 class="h3 mt-5"><stroke><strong> Jusqu'au 16 juillet 2018 - </strong><p class="text-danger"> Évènement</p></stroke>OPEN MUSEUM SÉRIES TV</h3>
 
-           <p class="font-weight-bold">Du 14 avril au 16 juillet 2018. Inclus au billet d'entrée. Gratuit - de 18 ans.</p><br>
+           <p class="gras"> <strong>Du 14 avril au 16 juillet 2018. Inclus au billet d'entrée. Gratuit - de 18 ans.</strong></p>
 
-           <p>Pour la cinquième édition de son <p class="font-weight-bold">Open Museum</p>, le Palais des Beaux-Arts de Lille convie non pas une personnalité mais un genre,
+           <p class="p">Pour la cinquième édition de son <strong>Open Museum</strong>,le Palais des Beaux-Arts de Lille convie non pas
+             une personnalité mais un genre,
 
-            populaire et aussi créatif: la série tv.</p><br>
+            populaire et aussi créatif: la série tv.</p>
 
-            <p class="font-weight-bold">Extraits, costumes et objets révèleront les nombreuses références artistiques dans les séries tv.</p>
-
-         </p>
+            <p class="gras"><strong>Extraits, costumes et objets révèleront les nombreuses références artistiques dans les séries tv.</strong></p>
 
        </div>
 
@@ -161,54 +253,47 @@
 
      <div class="row">
 
-       <div class="col-3 mt-4">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-         <img src="img/img6.png" alt="">
+         <img src="img/img6.jpg" class="img-fluid img" alt="Responsive image">
 
        </div>
 
-      <div class="col"><hr>
+      <div class="col mt-4">
 
-         <h3><stroke><p class="font-weight-bold"> Le 29 juillet 2018 - </p><p class="text-success"> JEUNE PUBLIC</p></stroke>À PAS DE LOUP</h3>
+        <div class="right"></div>
 
-         <p>
+         <h3 class="h3 mt-5"><stroke><strong> Le 29 juillet 2018 - </strong><p class="text-success"> JEUNE PUBLIC</p></stroke>À PAS DE LOUP</h3>
 
-           <p class="font-weight-bold">De 15 h 30 à 17 h 30. Gratuit pour les - de 18 ans. Autres: 7 €/ 4 €. </p><br>
+        <p class="gras"><strong>De 15 h 30 à 17 h 30. Gratuit pour les - de 18 ans. Autres: 7 €/ 4 €. </strong></p>
 
-           <p>Au cœur des collections, partez à la recherche du loup qui vous fera découvrir le musée en jouant!</p><br>
+        <p class="p">Au cœur des collections, partez à la recherche du loup qui vous fera découvrir le musée en jouant!</p>
 
-           <p class="font-weight-bold">Entrez, visitez, cherchez... et surtout: gare au loup!</p>
-
-         </p>
+           <p class="gras"><strong>Entrez, visitez, cherchez... et surtout: gare au loup!</strong></p>
 
        </div>
 
      </div>
 
-
-
-
      <div class="row">
 
-       <div class="col-5 mt-4">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-         <img src="img/img2.png" alt="">
+         <img src="img/img2.jpg" class="img-fluid img" alt="Responsive image">
 
        </div>
 
-      <div class="col"><hr>
+      <div class="col mt-4">
 
-         <h3><p class="font-weight-bold"> Le 25 juillet 2018 - </p><p class="text-primary">VISITE</p>VISITE PRESTO</h3></p>
+        <div class="right"></div>
 
-         <p>
+         <h3 class="h3 mt-5"><stroke><strong> Le 25 juillet 2018 - </strong><p class="text-primary">VISITE</p></stroke>VISITE PRESTO</h3>
 
-           <p class="font-weight-bold">À 12 h 30. 1 € + droit d’entrée - Durée : 30 mn</p><br>
+           <p class="gras"><strong>À 12 h 30. 1 € + droit d’entrée - Durée : 30 mn</strong></p>
 
-           <p>Un tête à tête avec une œuvre différente chaque semaine.</p><br>
+           <p class="p">Un tête à tête avec une œuvre différente chaque semaine.</p>
 
-            <p class="font-weight-bold">En forêt de Fontainebleau, Constant Troyon</p>
-
-         </p>
+            <p class="gras"><strong>En forêt de Fontainebleau, Constant Troyon</strong></p>
 
        </div>
 
@@ -219,116 +304,102 @@
 
      <div class="row">
 
-       <div class="col-4 mt-4">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-         <img src="img/img3.png" alt="">
+         <img src="img/img3.jpg" class="img-fluid img" alt="Responsive image">
 
        </div>
 
-      <div class="col"><hr>
+      <div class="col mt-4 ">
 
-         <p><h3><p class="font-weight-bold"> Le 22 juillet 2018 - </p><p class="text-success">JEUNE PUBLIC</p>VISITE À CROQUER</h3></p>
+        <div class="right"></div>
 
-         <p>
+         <h3 class="h3 mt-5"><stroke><strong> Le 22 juillet 2018 - </strong><p class="text-success">JEUNE PUBLIC</p></stroke>VISITE À CROQUER</h3>
 
-           <p class="font-weight-bold">À 15 h 30. 8 €/4 € - Gratuit - de 18 ans.</p><br>
+           <p class="gras"><strong>À 15 h 30. 8 €/4 € - Gratuit - de 18 ans.</strong></p>
 
-           <p>Une visite familiale pour découvrir le musée en compagnie d'un plasticien.</p><br>
+           <p class="p">Une visite familiale pour découvrir le musée en compagnie d'un plasticien.</p>
 
-            <p class="font-weight-bold">Croquis, modelage, découpage-collage... une initiation ludique aux arts plastiques.</p>
-
-         </p>
+            <p class="gras"><strong>Croquis, modelage, découpage-collage... une initiation ludique aux arts plastiques.</strong></p>
 
        </div>
 
      </div>
-
-
-
 
      <div class="row">
 
-       <div class="col-5 mt-4">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-         <img src="img/img4.png" alt="">
+         <img src="img/img4.jpg" class="img-fluid img" alt="Responsive image">
 
        </div>
 
-      <div class="col"><hr>
 
-         <p><h3><p class="font-weight-bold"> Le 22 septembre 2018 - </p>
+      <div class="col mt-4">
 
-           <p class="text-danger"> ATELIERS</p>INSCRITPIONS ATELIERS</h3></p>
+       <div class="right"></div>
 
-         <p>
+         <h3 class="h3 mt-5"><stroke><strong> Le 22 septembre 2018 - </strong>
 
-           <p class="font-weight-bold">De 8 h à 12 h. Entrée libre.</p><br>
+           <p class="text-danger"> ATELIERS</p></stroke>INSCRITPIONS ATELIERS</h3>
 
-           <p>Inscriptions enfants- ados - adultes pour les ateliers de l'année 2018-19.</p><br>
+           <p class="gras"><strong>De 8 h à 12 h. Entrée libre.</strong></p>
 
-           <p class="font-weight-bold">Dossier d'inscription à télécharger en ligne (prochainement).</p>
+           <p class="p">Inscriptions enfants- ados - adultes pour les ateliers de l'année 2018-19.</p>
 
-         </p>
+           <p class="gras"><strong>Dossier d'inscription à télécharger en ligne (prochainement).</strong></p>
 
        </div>
 
      </div>
-
-
-
 
      <div class="row">
 
-       <div class="col-3 mt-4">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-         <img src="img/img5.png" alt="">
+         <img src="img/img5.jpg" class="img-fluid img" alt="Responsive image">
 
        </div>
 
-      <div class="col"><hr>
+      <div class="col mt-4">
 
-         <p><h3><p class="font-weight-bold"> Le 23 septembre 2018 - </p>
+       <div class="right"></div>
 
-           <p class="text-info"> CONFÉRENCE</p>Un art du luxe: les ivoires à l'époque gothique</h3></p>
+         <h3 class="h3 mt-5"><stroke><strong> Le 23 septembre 2018 - </strong>
 
-         <p>
+           <p class="text-info"> CONFÉRENCE</p></stroke>Un art du luxe: les ivoires à l'époque gothique</h3>
 
-           <p class="font-weight-bold">À 10 h 30. 5€ / 3€ / 1€ (étudiants). Billetterie sur place.</p><br>
+           <p class="gras"><strong>À 10 h 30. 5€ / 3€ / 1€ (étudiants). Billetterie sur place.</strong></p>
 
-           <p>Une conférence proposée et organisée par les amis des Musées de Lille dans le cadre du cycle Invitation à l'art.</p><br>
+           <p class="p">Une conférence proposée et organisée par les amis des Musées de Lille dans le cadre du cycle Invitation à l'art.</p>
 
-           <p class="font-weight-bold">Par Laetitia Barragué-Zouita, Conservateur du Patrimoine Département du Moyen Âge et de la Renaissance</p>
-
-         </p>
+           <p class="gras"><strong>Par Laetitia Barragué-Zouita, Conservateur du Patrimoine Département du Moyen Âge et de la Renaissance</strong></p>
 
        </div>
 
      </div>
-
-
-
 
     <div class="row">
 
-      <div class="col-5 mt-4">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-        <img src="img/img7.png" alt="">
+        <img src="img/img7.jpg" class="img-fluid img" alt="Responsive image">
 
       </div>
 
-     <div class="col"><hr>
+     <div class="col mt-4">
 
-        <p><h3><p class="font-weight-bold"> Le 6 septembre 2018 - </p>
+       <div class="right"></div>
 
-          <p class="text-primary"> VISITE</p>LEÇON D'ART</h3></p>
+        <h3 class="h3 mt-5"><stroke><strong> Le 6 septembre 2018 - </strong>
 
-        <p>
+          <p class="text-primary"> VISITE</p></stroke>LEÇON D'ART</h3>
 
-          <p class="font-weight-bold">À 14 h 30. 4€ + droit d'entrée.</p><br>
+          <p class="gras"><strong>À 14 h 30. 4€ + droit d'entrée.</strong></p>
 
-          <p>Pour tous ceux qui veulent s'initier à l'histoire de l'art.</p><br>
+          <p class="p">Pour tous ceux qui veulent s'initier à l'histoire de l'art.</p>
 
-          <p class="font-weight-bold">Sur le thème: Miracles et événements merveilleux</p>
+          <p class="gras"><strong>Sur le thème: Miracles et événements merveilleux</strong></p>
 
         </p>
 
@@ -341,31 +412,55 @@
 
     <div class="row">
 
-      <div class="col-5 mt-4">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-4">
 
-        <img src="img/img8.png" alt="">
+        <img src="img/img8.jpg" class="img-fluid img" alt="Responsive image">
 
       </div>
 
-     <div class="col"><hr>
 
-        <p><h3><p class="font-weight-bold">  Le 17 août 2018 - </p>
 
-          <p class="text-primary"> VISITE</p>VISITE PRESTO</h3></p>
+     <div class="col mt-4">
 
-        <p>
+      <div class="right"></div>
 
-          <p class="font-weight-bold">À 12 h 30. 1 € + droit d’entrée - Durée : 30 mn </p><br>
+        <h3 class="h3 mt-5"><stroke><strong>  Le 17 août 2018 - </strong>
 
-          <p>Un tête à tête avec une œuvre différente chaque semaine.</p><br>
+          <p class="text-primary"> VISITE</p></stroke>VISITE PRESTO</h3>
 
-          <p class="font-weight-bold">La Vierge à l'Enfant Jésus, Di Giovanni</p>
+          <p class="gras"><strong>À 12 h 30. 1 € + droit d’entrée - Durée : 30 mn </strong></p>
 
-        </p>
+         <p class="p">Un tête à tête avec une œuvre différente chaque semaine.</p>
+
+          <p class="gras"><strong>La Vierge à l'Enfant Jésus, Di Giovanni</strong></p>
 
       </div>
 
     </div>
+
+   <div class="row mt-5">
+     <div class="col-10">
+
+    <div class="pagination--light container">
+        <ul class="row offset-6 page">
+          <li class="col-1 active"><a href="#">1</a></li>
+          <li class="col-1 index-item"><a href="#">2</a></li>
+          <li class="col-1 index-item"><a href="#">3</a></li>
+          <li class="col-1 index-item"><a href="#">4</a></li>
+        </ul>
+    </div>
+      </div>
+
+      <div class="col">
+
+<div class="btn-group dropright">
+  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    suivant
+  </button>
+
+</div>
+</div>
+</div>
 
 
 
@@ -380,7 +475,9 @@
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 
 
