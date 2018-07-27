@@ -133,6 +133,7 @@ ul {
 .Lovelo {
     font-family:"Lovelo";
 }
+
 .color-white {
     color:white !important;
 }
@@ -195,6 +196,84 @@ ul {
     height:10px;
     background-color:white;
 }
+
+
+
+
+
+#player
+{
+  height: 90vh;
+  width: 99.2vw;
+  margin: 0;
+  z-index: -1;
+}
+
+.style-title
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.fixed-pres-top
+{
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+
+}
+
+.pad-fixed-pres
+{
+  padding: 40px;
+}
+
+.bgwhite-pres
+{
+  background-color: #fff;
+  height: 17px;
+}
+
+.square-17px
+{
+  width: 17px;
+}
+
+.fixed-pres-title
+{
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+
+}
+
+.fixed-pres-bot
+{
+  position: absolute;
+  top: 68vh;
+  width: 100%;
+
+}
+
+.size-title-pres
+{
+  font-size: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.size-title-pres:hover
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*end pres pc*/
+
+
+
 
 /* ================ Pre-footer + footer gestion ============= */
 
