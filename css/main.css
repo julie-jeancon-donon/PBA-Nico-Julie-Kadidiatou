@@ -97,6 +97,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.innercontent{
+
+}
+
+.collection-select {
+  background: white;
+  border: 5px solid black;
+  padding: 7px;
+  font-weight: bold;
+  font-family: bold;
+  display: block;
+}
+
+.collection-list {
+  z-index: 3;
+  text-align: left;
+  font-family: bold;
+  top: 30px;
+  border: 4px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
 
 @font-face {font-family:"PBA"; src:url("pba.ttf");}
 @font-face {font-family:"Lovelo"; src:url("lovelo.ttf");}
@@ -105,10 +130,12 @@ textarea {
     font-family:"PBA";
 }
 
+.Lovelo {
+    font-family:"Lovelo";
+}
+
 .color-white {
     color:white !important;
-    font-family:"Lovelo";
-
 }
 
 .hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
@@ -157,6 +184,97 @@ textarea {
 }
 
 
+/* =================== First index container ================== */
+
+.first-container-index {
+    background:url(../img/first-img-index.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.border-separation-PBA-index {
+    height:10px;
+    background-color:white;
+}
+
+
+
+
+
+#player
+{
+  height: 90vh;
+  width: 99.2vw;
+  margin: 0;
+  z-index: -1;
+}
+
+.style-title
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.fixed-pres-top
+{
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+
+}
+
+.pad-fixed-pres
+{
+  padding: 40px;
+}
+
+.bgwhite-pres
+{
+  background-color: #fff;
+  height: 17px;
+}
+
+.square-17px
+{
+  width: 17px;
+}
+
+.fixed-pres-title
+{
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+
+}
+
+.fixed-pres-bot
+{
+  position: absolute;
+  top: 68vh;
+  width: 100%;
+
+}
+
+.size-title-pres
+{
+  font-size: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.size-title-pres:hover
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*end pres pc*/
+
+
+
+
 /* ================ Pre-footer + footer gestion ============= */
 
 .pre-footer:hover {
@@ -169,7 +287,7 @@ textarea {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt {
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random {
     color:#D8383F !important;
 }
 
@@ -205,12 +323,6 @@ footer a:hover {
         top:35%;
     }
 }
-
-
-
-
-
-
 
 
 
