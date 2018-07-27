@@ -130,10 +130,11 @@ ul {
     font-family:"PBA";
 }
 
+.Lovelo {
+    font-family:"Lovelo";
+}
 .color-white {
     color:white !important;
-    font-family:"Lovelo";
-
 }
 
 .hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
@@ -182,6 +183,19 @@ ul {
 }
 
 
+/* =================== First index container ================== */
+
+.first-container-index {
+    background:url(../img/first-img-index.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.border-separation-PBA-index {
+    height:10px;
+    background-color:white;
+}
+
 /* ================ Pre-footer + footer gestion ============= */
 
 .pre-footer:hover {
@@ -194,7 +208,7 @@ ul {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe {
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random {
     color:#D8383F !important;
 }
 
