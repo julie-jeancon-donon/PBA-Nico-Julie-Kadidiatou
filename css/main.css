@@ -273,6 +273,69 @@ ul {
 /*end pres pc*/
 
 
+/* Carousel */
+
+.active .border-slider-top {
+    position:absolute;
+    top:10%;
+    left:12%;
+    height:14px;
+    background-color:white;
+}
+
+.active .border-slider-bot {
+    position:absolute;
+    bottom:10%;
+    left:12%;
+    height:14px;
+    background-color:white;
+}
+
+.fa-clipboard-check {
+    position:absolute;
+    top:18%;
+    left:45%;
+}
+
+.slider-text {
+    position:absolute;
+    bottom:25%;
+    left:10%;
+    font-size:0.8em;
+}
+
+.slider-text h2 {
+    font-size:1.4em;
+}
+
+.fa-sun {
+    position:absolute;
+    top:14%;
+    left:45%;
+}
+
+@media all and (min-width:712px) {
+
+    .fa-clipboard-check {
+        position:absolute;
+        top:25%;
+        left:48%;
+    }
+
+    .fa-sun {
+        position:absolute;
+        top:20%;
+        left:48%;
+    }
+
+    .slider-text {
+        position:absolute;
+        top:40%;
+        left:10%;
+        font-size:1.2em;
+    }
+}
+
 
 
 /* ================ Pre-footer + footer gestion ============= */
@@ -287,7 +350,7 @@ ul {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random {
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random, .link-holyday:hover .fa-clipboard-check, .link-sun:hover .fa-sun {
     color:#D8383F !important;
 }
 
