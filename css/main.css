@@ -138,14 +138,14 @@ ul {
     color:white !important;
 }
 
+.color-black {
+    color:black;
+}
+
 .hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
     transition: color 0.5s !important;
     color:red !important;
     border-color:red !important;
-}
-
-.bgnoir {
-    background-color:black;
 }
 
 .form-control {
@@ -198,8 +198,7 @@ ul {
 }
 
 
-
-
+/* ============= First index container desktop version ========== */
 
 #player
 {
@@ -270,10 +269,9 @@ ul {
   color: #fff;
 }
 
-/*end pres pc*/
 
 
-/* Carousel */
+/* ======================== Carousel ============================ */
 
 .active .border-slider-top {
     position:absolute;
@@ -337,6 +335,41 @@ ul {
 }
 
 
+/* ================== First container img index ================= */
+
+
+.Bosch, .Raph, .Goya, .Donatello {
+    height:75vh;
+}
+
+.Bosch {
+    background:url(../img/img1-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.img-text {
+    background-color:white;
+    margin-top:70%;
+    margin-bottom:30%;
+    height:30vh;
+    padding-bottom:50px;
+}
+
+.Raph {
+    background:url(../img/img2-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.Goya {
+    background:url(../img/img3-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.Donatello {
+    background:url(../img/img4-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
 
 /* ================ Pre-footer + footer gestion ============= */
 
@@ -350,7 +383,7 @@ ul {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random, .link-holyday:hover .fa-clipboard-check, .link-sun:hover .fa-sun {
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random, .link-holyday:hover .fa-clipboard-check, .link-sun:hover .fa-sun, .Bosch a:hover .Bosch-hover, .Raph a:hover .Raph-hover, .Goya a:hover .Goya-hover, .Donatello a:hover .Donatello-hover {
     color:#D8383F !important;
 }
 
@@ -364,6 +397,10 @@ ul {
 
 .bgred {
     background-color:#D8383F;
+}
+
+.bgblack {
+    background-color:#1D1D1E;;
 }
 
 footer a {
@@ -384,6 +421,10 @@ footer a:hover {
         position:absolute;
         left:80%;
         top:35%;
+    }
+    .img-text {
+        margin-top:65%;
+        height:27vh;
     }
 }
 
