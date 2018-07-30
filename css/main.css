@@ -120,13 +120,36 @@ textarea {
 }
 
 .right{
-  width: 747px;
+  width: 689px;
   border-top: inset;
   border-right: outset;
   height: 34px;
   color: red;
   position: absolute;
 }
+
+.right1{
+  width: 689px;
+  border-top: inset;
+  border-right: outset;
+  height: 34px;
+  color: green;
+  position: absolute;
+}
+
+.right2{
+  width: 689px;
+  border-top: inset;
+  border-right: outset;
+  height: 34px;
+  color: #085bf1;
+  position: absolute;
+}
+
+.text-info{
+  color: #085bf1;
+}
+
 stroke{
   display: flex;
 }
@@ -219,7 +242,8 @@ stroke{
 }
 
 @media screen and (max-width: 767px) {
-     .right{
+
+     .right, .right1, .right2{
        display: none;
      }
 
@@ -238,11 +262,19 @@ stroke{
      .p{
        display: none;
      }
+
+     .img{
+       width: 100%
+     }
+
+     .h3, .p, .gras{
+       margin-left: 4px;
+     }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .right{
+  .right, .right1, .right2{
     display: none;
   }
 
@@ -253,6 +285,15 @@ stroke{
   .p{
     display: none;
   }
+
+  .img{
+    width: 100%
+  }
+
+  .h3, .p, .gras{
+    margin-left: 88px;
+  }
+
 }
 
 @media screen and (min-width: 993px) and (max-width: 1204px) {
@@ -261,7 +302,7 @@ stroke{
      display: none;
    }
 
-   .right{
+   .right, .right1, .right2{
      display: none;
    }
 
@@ -272,6 +313,11 @@ stroke{
    .img{
      width: 100%
    }
+
+   .h3, .p, .gras{
+     margin-left: 120px;
+   }
+
 }
 
 
