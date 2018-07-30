@@ -436,6 +436,13 @@ stroke{
 }
 
 
+/* ==================== Transition image ==================== */
+
+
+.transition-imgs {
+    border: 2px solid white;
+}
+
 /* ================ Pre-footer + footer gestion ============= */
 
 .pre-footer:hover {
@@ -444,11 +451,13 @@ stroke{
     color:#D8383F !important;
 }
 
-.pre-footer:hover div {
+.pre-footer:hover div, .transition-imgs:hover {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random, .link-holyday:hover .fa-clipboard-check, .link-sun:hover .fa-sun, .Bosch a:hover .Bosch-hover, .Raph a:hover .Raph-hover, .Goya a:hover .Goya-hover, .Donatello a:hover .Donatello-hover {
+/* ================ Hover selector for index ! ================= */
+
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random, .link-holyday:hover .fa-clipboard-check, .link-sun:hover .fa-sun, .Bosch a:hover .Bosch-hover, .Raph a:hover .Raph-hover, .Goya a:hover .Goya-hover, .Donatello a:hover .Donatello-hover, .transition-imgs:hover .fa-clone, .transition-imgs:hover .fa-eye {
     color:#D8383F !important;
 }
 
