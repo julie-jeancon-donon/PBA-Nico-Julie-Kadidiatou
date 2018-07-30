@@ -163,6 +163,17 @@ stroke{
   list-style: none;
 }
 
+@font-face {font-family:"PBA"; src:url("pba.ttf");}
+@font-face {font-family:"Lovelo"; src:url("lovelo.ttf");}
+
+.PBA-title {
+    font-family:"PBA";
+}
+
+.Lovelo {
+    font-family:"Lovelo";
+}
+
 .color-white {
     color:white !important;
 }
@@ -183,6 +194,7 @@ stroke{
     background-color:black;
 }
 
+
 /*.fas{
   font-size: 30px;
   margin-left: 19.2em;
@@ -199,6 +211,7 @@ stroke{
 .h3{
   font-size: 25px;
 }
+
 
 .pointer {
     min-height:25px;
@@ -223,13 +236,150 @@ stroke{
     background-color:white;
 }
 
+
 .img {
   max-height:400px;
 }
 
+
+
 .PBA-linkstyle:hover {
     text-decoration:none;
 }
+
+
+
+
+/* =================== First index container ================== */
+
+.first-container-index {
+    background:url(../img/first-img-index.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.border-separation-PBA-index {
+    height:10px;
+    background-color:white;
+}
+
+
+
+
+
+#player
+{
+  height: 90vh;
+  width: 99.2vw;
+  margin: 0;
+  z-index: -1;
+}
+
+.style-title
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.fixed-pres-top
+{
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+
+}
+
+.pad-fixed-pres
+{
+  padding: 40px;
+}
+
+.bgwhite-pres
+{
+  background-color: #fff;
+  height: 17px;
+}
+
+.square-17px
+{
+  width: 17px;
+}
+
+.fixed-pres-title
+{
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+
+}
+
+.fixed-pres-bot
+{
+  position: absolute;
+  top: 68vh;
+  width: 100%;
+
+}
+
+.size-title-pres
+{
+  font-size: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.size-title-pres:hover
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*end pres pc*/
+
+
+
+
+/* ================ Pre-footer + footer gestion ============= */
+
+.pre-footer:hover {
+    transition:color 0.5s !important;
+    background-color:white !important;
+    color:#D8383F !important;
+}
+
+.pre-footer:hover div {
+    border-color:#D8383F !important
+}
+
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random {
+    color:#D8383F !important;
+}
+
+.pre-footer:hover .switch-to-red {
+    color:#D8383F !important;
+}
+
+.font-footer {
+    font-size:0.8em;
+}
+
+.bgred {
+    background-color:#D8383F;
+}
+
+footer a {
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover {
+    transition:color 0.5s !important;
+    color:red !important;
+    text-decoration:none;
+}
+
 
 
 
@@ -319,8 +469,6 @@ stroke{
    }
 
 }
-
-
 
 
 
