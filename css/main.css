@@ -443,6 +443,71 @@ stroke{
     border: 2px solid white;
 }
 
+/* ================ Second container imgs ================== */
+
+.second-container-img-hover:hover {
+    opacity:0.8;
+}
+
+.grid-container {
+    display:none;
+}
+
+.cellphone-second-container-imgs {
+    min-height:350px;
+}
+
+@media all and (min-width:1200px){
+    .grid-container {    
+      display: grid;
+      height: 45vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr;
+      grid-template-areas: "girls building people man landscape";
+    }
+}    
+
+.girls { 
+    grid-area:girls;
+    height:45vh;
+    background:url(../img/img1-second-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.building {
+    grid-area: building;
+    height:45vh;
+    background:url(../img/img2-second-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.people { 
+    grid-area: people; 
+    height:45vh;
+    background:url(../img/img3-second-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.man { 
+    grid-area: man;
+    height:45vh;
+    background:url(../img/img4-second-container.jpg) no-repeat;
+    background-size:cover; 
+}
+
+.landscape { 
+    grid-area: landscape;
+    height:45vh;
+    background:url(../img/img5-second-container.jpg) no-repeat;
+    background-size:cover;     
+}
+
+@media all and (min-width:768px) {
+    .landscape .cellphone-second-container-img {
+        display:none;
+    }
+}
+
 /* ================ Pre-footer + footer gestion ============= */
 
 .pre-footer:hover {
