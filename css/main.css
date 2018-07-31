@@ -516,6 +516,12 @@ stroke{
     }
 }
 
+@media all and (min-width:1200px) {
+    .landscape {
+        display:block;
+    }
+}
+
 /* ================ Pre-footer + footer gestion ============= */
 
 .pre-footer:hover {
