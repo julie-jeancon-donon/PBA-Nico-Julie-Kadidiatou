@@ -182,6 +182,10 @@ stroke{
     color:black;
 }
 
+.bold {
+    font-weight:bold !important;
+}
+
 .hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
     transition: color 0.5s !important;
     color:red !important;
@@ -435,6 +439,10 @@ stroke{
     background-size:cover;
 }
 
+.Goya .img-text {
+    min-height:180px;
+}
+
 
 /* ==================== Transition image ==================== */
 
@@ -503,7 +511,7 @@ stroke{
 }
 
 @media all and (min-width:768px) {
-    .landscape .cellphone-second-container-img {
+    .landscape {
         display:none;
     }
 }
