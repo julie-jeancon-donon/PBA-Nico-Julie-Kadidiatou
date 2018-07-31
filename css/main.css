@@ -97,31 +97,71 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.innercontent{
-
+.sel-contain{
+   display: block;
 }
 
-.collection-select {
+#dropdownMenuButton, .dropdown-toggle{
   background: white;
   border: 5px solid black;
-  padding: 7px;
+  color: black;
   font-weight: bold;
   font-family: bold;
-  display: block;
+
 }
 
-.collection-list {
+.index-item{
+  border-left: 2px solid black;
+  color: black;
+}
+
+.page{
+  list-style: none;
+}
+
+.right{
+  width: 689px;
+  border-top: inset;
+  border-right: outset;
+  height: 34px;
+  color: red;
+  position: absolute;
+}
+
+.right1{
+  width: 689px;
+  border-top: inset;
+  border-right: outset;
+  height: 34px;
+  color: green;
+  position: absolute;
+}
+
+.right2{
+  width: 689px;
+  border-top: inset;
+  border-right: outset;
+  height: 34px;
+  color: #085bf1;
+  position: absolute;
+}
+
+.text-info{
+  color: #085bf1;
+}
+
+stroke{
+  display: flex;
+}
+
+.collection-list, .news{
   z-index: 3;
   text-align: left;
   font-family: bold;
   top: 30px;
   border: 4px solid black;
-}
-
-ul {
   list-style: none;
 }
-
 
 @font-face {font-family:"PBA"; src:url("pba.ttf");}
 @font-face {font-family:"Lovelo"; src:url("lovelo.ttf");}
@@ -138,20 +178,42 @@ ul {
     color:white !important;
 }
 
+.color-black {
+    color:black;
+}
+
+.bold {
+    font-weight:bold !important;
+}
+
 .hover-header:hover, .search:hover, .hover-header:hover .MY-PBA {
     transition: color 0.5s !important;
     color:red !important;
     border-color:red !important;
 }
 
-.bgnoir {
-    background-color:black;
-}
-
 .form-control {
     border:4px solid white;
     border-radius:0;
     background-color:black;
+}
+
+
+/*.fas{
+  font-size: 30px;
+  margin-left: 19.2em;
+}
+
+.innercontent{
+  margin-left: 30em;
+}
+
+.agenda{
+   width: 80px;
+   margin-left: 34em;
+}*/
+.h3{
+  font-size: 25px;
 }
 
 
@@ -179,9 +241,17 @@ ul {
 }
 
 
+.img {
+  max-height:400px;
+}
+
+
+
 .PBA-linkstyle:hover {
     text-decoration:none;
 }
+
+
 
 
 /* =================== First index container ================== */
@@ -198,8 +268,7 @@ ul {
 }
 
 
-
-
+/* ============= First index container desktop version ========== */
 
 #player
 {
@@ -270,10 +339,182 @@ ul {
   color: #fff;
 }
 
-/*end pres pc*/
 
 
+/* ======================== Carousel ============================ */
 
+.active .border-slider-top {
+    position:absolute;
+    top:10%;
+    left:12%;
+    height:14px;
+    background-color:white;
+}
+
+.active .border-slider-bot {
+    position:absolute;
+    bottom:10%;
+    left:12%;
+    height:14px;
+    background-color:white;
+}
+
+.fa-clipboard-check {
+    position:absolute;
+    top:18%;
+    left:45%;
+}
+
+.slider-text {
+    position:absolute;
+    bottom:25%;
+    left:10%;
+    font-size:0.8em;
+}
+
+.slider-text h2 {
+    font-size:1.4em;
+}
+
+.fa-sun {
+    position:absolute;
+    top:14%;
+    left:45%;
+}
+
+@media all and (min-width:712px) {
+
+    .fa-clipboard-check {
+        position:absolute;
+        top:25%;
+        left:48%;
+    }
+
+    .fa-sun {
+        position:absolute;
+        top:20%;
+        left:48%;
+    }
+
+    .slider-text {
+        position:absolute;
+        top:40%;
+        left:10%;
+        font-size:1.2em;
+    }
+}
+
+
+/* ================== First container img index ================= */
+
+
+.Bosch, .Raph, .Goya, .Donatello {
+    height:75vh;
+}
+
+.Bosch {
+    background:url(../img/img1-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.img-text {
+    background-color:white;
+    margin-top:70%;
+    margin-bottom:30%;
+    height:30vh;
+}
+
+.Raph {
+    background:url(../img/img2-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.Goya {
+    background:url(../img/img3-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.Donatello {
+    background:url(../img/img4-first-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.Goya .img-text {
+    min-height:180px;
+}
+
+
+/* ==================== Transition image ==================== */
+
+
+.transition-imgs {
+    border: 2px solid white;
+}
+
+/* ================ Second container imgs ================== */
+
+.second-container-img-hover:hover {
+    opacity:0.8;
+}
+
+.grid-container {
+    display:none;
+}
+
+.cellphone-second-container-imgs {
+    min-height:350px;
+}
+
+@media all and (min-width:1200px){
+    .grid-container {    
+      display: grid;
+      height: 45vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr;
+      grid-template-areas: "girls building people man landscape";
+    }
+}    
+
+.girls { 
+    grid-area:girls;
+    height:45vh;
+    background:url(../img/img1-second-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.building {
+    grid-area: building;
+    height:45vh;
+    background:url(../img/img2-second-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.people { 
+    grid-area: people; 
+    height:45vh;
+    background:url(../img/img3-second-container.jpg) no-repeat;
+    background-size:cover;
+}
+
+.man { 
+    grid-area: man;
+    height:45vh;
+    background:url(../img/img4-second-container.jpg) no-repeat;
+    background-size:cover; 
+}
+
+.landscape { 
+    grid-area: landscape;
+    height:45vh;
+    background:url(../img/img5-second-container.jpg) no-repeat;
+    background-size:cover;     
+}
+
+@media all and (min-width:768px) {
+    .landscape {
+        display:none;
+    }
+}
 
 /* ================ Pre-footer + footer gestion ============= */
 
@@ -283,11 +524,13 @@ ul {
     color:#D8383F !important;
 }
 
-.pre-footer:hover div {
+.pre-footer:hover div, .transition-imgs:hover {
     border-color:#D8383F !important
 }
 
-.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random {
+/* ================ Hover selector for index ! ================= */
+
+.pre-footer:hover .fa-tablet-alt, .pre-footer:hover .fa-mobile-alt, .pre-footer:hover .fa-building, .pre-footer:hover .fa-globe, .link-collection-content:hover .fa-square, .link-visiter-content:hover .fa-random, .link-holyday:hover .fa-clipboard-check, .link-sun:hover .fa-sun, .Bosch a:hover .Bosch-hover, .Raph a:hover .Raph-hover, .Goya a:hover .Goya-hover, .Donatello a:hover .Donatello-hover, .transition-imgs:hover .fa-clone, .transition-imgs:hover .fa-eye {
     color:#D8383F !important;
 }
 
@@ -303,6 +546,10 @@ ul {
     background-color:#D8383F;
 }
 
+.bgblack {
+    background-color:#1D1D1E;;
+}
+
 footer a {
     color:white;
     text-decoration:none;
@@ -316,15 +563,97 @@ footer a:hover {
 
 
 
+
 @media all and (min-width:1200px) {
     .search {
         position:absolute;
         left:80%;
         top:35%;
     }
+    .img-text {
+        margin-top:65%;
+        height:27vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+     .right, .right1, .right2{
+       display: none;
+     }
+
+     .pagination--light{
+       display: none;
+     }
+
+     .h3{
+       font-size: 15px;
+     }
+
+     .gras{
+       font-size: 13px;
+     }
+
+     .p{
+       display: none;
+     }
+
+     .img{
+       width: 100%
+     }
+
+     .h3, .p, .gras{
+       margin-left: 4px;
+     }
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .right, .right1, .right2{
+    display: none;
+  }
+
+  .pagination--light{
+    display: none;
+  }
+
+  .p{
+    display: none;
+  }
+
+  .img{
+    width: 100%
+  }
+
+  .h3, .p, .gras{
+    margin-left: 88px;
+  }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1204px) {
+
+   .p{
+     display: none;
+   }
+
+   .right, .right1, .right2{
+     display: none;
+   }
+
+   .pagination--light{
+     display: none;
+   }
+
+   .img{
+     width: 100%
+   }
+
+   .h3, .p, .gras{
+     margin-left: 120px;
+   }
+
+}
 
 
 
