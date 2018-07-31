@@ -466,16 +466,16 @@ stroke{
 }
 
 @media all and (min-width:1200px){
-    .grid-container {    
+    .grid-container {
       display: grid;
       height: 45vh;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 0.5fr;
       grid-template-areas: "girls building people man landscape";
     }
-}    
+}
 
-.girls { 
+.girls {
     grid-area:girls;
     height:45vh;
     background:url(../img/img1-second-container.jpg) no-repeat;
@@ -489,25 +489,25 @@ stroke{
     background-size:cover;
 }
 
-.people { 
-    grid-area: people; 
+.people {
+    grid-area: people;
     height:45vh;
     background:url(../img/img3-second-container.jpg) no-repeat;
     background-size:cover;
 }
 
-.man { 
+.man {
     grid-area: man;
     height:45vh;
     background:url(../img/img4-second-container.jpg) no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
-.landscape { 
+.landscape {
     grid-area: landscape;
     height:45vh;
     background:url(../img/img5-second-container.jpg) no-repeat;
-    background-size:cover;     
+    background-size:cover;
 }
 
 @media all and (min-width:768px) {
