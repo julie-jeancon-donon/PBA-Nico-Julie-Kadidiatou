@@ -25,10 +25,3 @@ TODO: Write history
 ## Credits
 
 Member group : Nicolas, Julie, Kadidiatou
-
-## License
-
-TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
