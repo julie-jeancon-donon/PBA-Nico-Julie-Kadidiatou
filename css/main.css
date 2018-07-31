@@ -212,6 +212,7 @@ stroke{
    width: 80px;
    margin-left: 34em;
 }*/
+
 .h3{
   font-size: 25px;
 }
@@ -466,7 +467,7 @@ stroke{
 }
 
 @media all and (min-width:1200px){
-    .grid-container {
+    .grid-container-index {
       display: grid;
       height: 45vh;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -618,7 +619,296 @@ footer a:hover {
   .right, .right1, .right2{
     display: none;
   }
+}
 
+.grid-container {
+  background-color: black;
+  display:block;
+}
+
+
+
+.encart{
+ background-color: rgba(255, 255, 255, 0.9);
+ display:flex;
+ flex-direction: row;
+ width: 90%;
+ height: 65px;
+
+}
+
+@font-face {
+ font-family: "lovelo";
+ src: url('lovelo.ttf');
+}
+
+@font-face {
+ font-family: "PBA";
+ src: url('pba.ttf');
+}
+
+
+.profil{
+ display: flex;
+ width:50%;
+ font-weight: 500;
+ font-size: 14px;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 3px;
+
+}
+
+.title{
+ display: flex;
+ width:50%;
+ font-family: "lovelo";
+ font-size: 21px;
+ padding-left: 5px;
+ justify-content: flex-start;
+ align-items: center;
+ }
+
+
+.individuel, .groupe, .famille, .etudiant, .enseignant {
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ grid-area: individuel;
+ height:85px;
+}
+
+
+.titre_bloc1{
+  height: 200px;
+  background-color: black;
+}
+
+h2{
+  font-size: 15px;
+  font-family: "lovelo";
+}
+
+h3{
+  font-size: 25px;
+  font-family:"lovelo";
+}
+
+.container-fluid{
+  width:100%;
+}
+
+.banane{
+  padding-top: 100%; /* defines aspect ratio */
+  position: relative;
+}
+
+.banane2{
+  padding-top: 100%;
+  position: relative;
+}
+
+
+.statue, .grand_bleu, .love, .food, .anges_demons, .bêtes, .BB, .archi {
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text{
+  background-color: white;
+  width: 70%;
+  height: 140px;
+  padding-top:20px;
+  padding-left:20px;
+  padding-bottom:20px;
+}
+
+
+
+.statue{
+  background-image: url(../img/Beaux-Gosses.jpg);
+}
+
+.grand_bleu{
+  background-image: url(../img/Le-grand-bleu.jpg);
+}
+
+.love{
+  background-image: url(../img/Love-etc.jpg);
+}
+
+.food{
+  background-image: url(../img/A-Table.jpg);
+}
+
+.anges_demons{
+  background-image: url(../img/Anges-et-Demons.jpg);
+}
+
+.bêtes{
+  background-image: url(../img/Histoires-de-betes.jpg);
+}
+
+.BB{
+  background-image: url(../img/Blondes-et-brunes.jpg);
+}
+
+.archi{
+  background-image: url(../img/Ar-t-chitecture.jpg);
+}
+
+.cat{
+  font-family: "lovelo";
+  font-size: 26px;
+}
+
+.titre_bloc2{
+  height: 100px;
+}
+
+.first_choice, .second_choice, .third_choice{
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.first_choice{
+  background-image: url(../img/4-oeuvres.jpg);}
+
+.second_choice{
+  background-image: url(../img/8-oeuvres.jpg);
+}
+
+.third_choice{
+  background-image: url(../img/12-oeuvres.jpg);
+}
+
+.minutes{
+  font-family: : "lovelo";
+  font-weight: bold;
+  font-size: 35px;
+}
+
+
+
+
+ @media (min-width: 992px) {
+
+ .grid-container {
+   display: grid;
+   height: 520px;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "individuel groupe famille etudiant enseignant";
+ }
+
+
+
+
+.encart{
+
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 77%;
+  height: 9em;
+  margin:auto;
+  display: block;
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+@font-face {
+  font-family: "lovelo";
+  src: url('lovelo.ttf');
+}
+
+@font-face {
+  font-family: "PBA";
+  src: url('pba.ttf');
+}
+
+
+.profil{
+  font-size: 17px;
+  width: auto;
+  display: block;
+  position: relative;
+  top:10px;
+
+}
+
+.title{
+  font-family: "lovelo";
+  font-size: 27px;
+  width:auto;
+  display: block;
+  padding-left:0;
+  position: relative;
+  bottom:3px;
+
+  }
+
+.individuel {
+  grid-area: individuel;
+  background-image: url(../img/Individuel.jpg);
+  background-size: cover;
+  height:100%;
+}
+
+
+.groupe {
+  grid-area: groupe;
+  background-image: url(../img/Groupe.jpg);
+  background-size: cover;
+  height:100%;
+}
+
+.famille {
+  grid-area: famille;
+  background-image: url(../img/Famille.jpg);
+  background-size: cover;
+  height:100%;
+}
+
+.etudiant {
+  grid-area: etudiant;
+  background-image: url(../img/Etudiant.jpg);
+  background-size: cover;
+  height:100%;
+}
+
+.enseignant {
+  grid-area: enseignant;
+  background-image: url(../img/Enseignant.jpg);
+  background-size: cover;
+  height:100%;
+}
+
+.banane{
+  padding-top: 40%;
+}
+
+.banane2{
+  padding-top:40%;
+}
+
+.text{
+  height: 180px;
+}
+=======
   .pagination--light{
     display: none;
   }
@@ -658,6 +948,7 @@ footer a:hover {
    .h3, .p, .gras{
      margin-left: 120px;
    }
+>>>>>>> 7a9f8229f6a8da15ddfad5567e6a9d8d9be6faea
 
 }
 
